@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Staphyloccoccus Aureus — My Wiki</title>
+  <style>
+    :root{--bg:#fbf9f6;--panel:#ffffff;--muted:#6b6b6b;--accent:#cbb08a;--text:#222}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1100px;margin:24px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{background:var(--panel);padding:10px 14px;border-radius:10px;font-weight:700;color:var(--accent)}
+    h1{margin:0;font-size:24px}
+    nav{margin-top:18px;display:flex;gap:12px;align-items:center}
+    nav a{background:var(--panel);padding:8px 12px;border-radius:8px;color:var(--text);text-decoration:none;border:1px solid rgba(0,0,0,0.04)}
+    .search-bar{margin-left:auto;position:relative}
+    .search-bar input{padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);min-width:220px}
+    .search-results{position:absolute;right:0;top:44px;background:var(--panel);border:1px solid rgba(0,0,0,0.06);box-shadow:0 8px 24px rgba(0,0,0,0.06);width:320px;border-radius:8px;max-height:320px;overflow:auto;z-index:60}
+    .search-results a{display:block;padding:8px 10px;border-bottom:1px solid rgba(0,0,0,0.03);text-decoration:none;color:var(--text)}
+    .search-results a:hover{background:rgba(0,0,0,0.02)}
+    main{display:flex;gap:20px;margin-top:22px}
+    .card{background:var(--panel);padding:14px;border-radius:10px;border:1px solid rgba(0,0,0,0.04)}
+    .content{flex:1}
+    .page{background:var(--panel);padding:18px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);max-width:760px;margin:0 auto}
+    .page section{background:var(--panel);padding:12px;border-radius:8px;border:1px solid rgba(0,0,0,0.04);margin-top:12px}
+    .page section h3{margin:0 0 8px 0}
+    .section-list{margin:0;padding-left:18px;color:var(--text)}
+    .section-list li{margin:6px 0;font-size:14px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media(max-width:900px){.wrap{padding:12px}.main{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">WIKI</div>
+      <div>
+        <h1>Staphyloccoccus Aureus</h1>
+        <div style="color:var(--muted);font-size:13px">Fiche bactérie — edit staphyloccoccus-aureus.html</div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="antibiotiques.html">Antibiotiques</a>
+      <a href="bacteries.html">Bactéries</a>
+      <a href="about.html">About</a>
+      <div class="search-bar">
+        <input id="siteSearch" placeholder="Search pages..." aria-label="Search pages" />
+        <div id="searchResults" class="search-results" style="display:none"></div>
+      </div>
+    </nav>
+
+    <main>
+      <article class="page">
+        <h2>Staphyloccoccus Aureus</h2>
+        <p>Edit the sections below directly in this file to update content for this bacterium.</p>
+
+        <section id="infections-principales">
+          <h3>Infections principales</h3>
+          <ul class="section-list">
+            <li>Infections cutanées et des tissus mous (furoncles, cellulites).</li>
+            <li>Infections ostéo-articulaires (ostéomyélite, arthrite).</li>
+            <li>Endocardite, bactériémie et infections de cathéter.</li>
+            <li>Infections pulmonaires (pneumonie), notamment nosocomiale.</li>
+          </ul>
+        </section>
+
+        <section id="epidemiologie">
+          <h3>Épidémiologie — Taux de résistance à Qc</h3>
+          <ul class="section-list">
+            <li>Prévalence communautaire et nosocomiale variable; renseigner données locales.</li>
+            <li>Taux de SARM (Staphylococcus aureus résistant à la méticilline) au Québec : mettre à jour selon sources provinciales.</li>
+            <li>Répartition par milieu (communautaire vs hospitalier) et populations à risque.</li>
+          </ul>
+        </section>
+
+        <section id="mecanismes">
+          <h3>Mécanismes de résistance</h3>
+          <ul class="section-list">
+            <li>Acquisition du gène mecA (protéine PBP2a) conférant résistance aux bêta-lactamines classiques.</li>
+            <li>Mécanismes d'efflux ou modification de cibles pour autres familles d'antibiotiques.</li>
+            <li>Capacité de former des biofilms sur dispositifs médicaux.</li>
+          </ul>
+        </section>
+
+        <section id="traitements">
+          <h3>Traitements généralement efficaces</h3>
+          <ul class="section-list">
+            <li>Pénicillines résistantes aux pénicillinases pour souches sensibles (ex: cloxacilline) — vérifier sensibilité.</li>
+            <li>Pour SARM : vancomycine, daptomycine, linezolide selon localisation et sévérité.</li>
+            <li>Traitements oraux possibles (ex: clindamycine, TMP-SMX, doxycycline) selon antibiogramme et indication clinique.</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+      <footer>
+        <div>Local file — edit <strong>staphyloccoccus-aureus.html</strong> to update this page.</div>
+      </footer>
+  </div>
+  <script src="search.js"></script>
+</body>
+</html>

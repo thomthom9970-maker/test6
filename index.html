@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wiki — Home</title>
+  <style>
+    :root{--bg:#fbf9f6;--panel:#ffffff;--muted:#6b6b6b;--accent:#cbb08a;--text:#222}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1100px;margin:24px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{background:var(--panel);padding:10px 14px;border-radius:10px;font-weight:700;color:var(--accent)}
+    h1{margin:0;font-size:24px}
+    nav{margin-top:18px;display:flex;gap:12px;align-items:center}
+    nav a{background:var(--panel);padding:8px 12px;border-radius:8px;color:var(--text);text-decoration:none;border:1px solid rgba(0,0,0,0.04)}
+    .search-bar{margin-left:auto;position:relative}
+    .search-bar input{padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);min-width:220px}
+    .search-results{position:absolute;right:0;top:44px;background:var(--panel);border:1px solid rgba(0,0,0,0.06);box-shadow:0 8px 24px rgba(0,0,0,0.06);width:320px;border-radius:8px;max-height:320px;overflow:auto;z-index:60}
+    .search-results a{display:block;padding:8px 10px;border-bottom:1px solid rgba(0,0,0,0.03);text-decoration:none;color:var(--text)}
+    .search-results a:hover{background:rgba(0,0,0,0.02)}
+    main{margin-top:22px}
+    .card{background:var(--panel);padding:14px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);max-width:760px;margin:0 auto}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:900px){.wrap{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">WIKI</div>
+      <div>
+        <h1>Microguide</h1>
+        <div style="color:var(--muted);font-size:13px">Votre infectiologue de poche</div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="antibiotiques.html">Antibiotiques</a>
+      <a href="bacteries.html">Bactéries</a>
+      <a href="about.html">About</a>
+      <div class="search-bar">
+        <input id="siteSearch" placeholder="Search pages..." aria-label="Search pages" />
+        <div id="searchResults" class="search-results" style="display:none"></div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="card">
+        <h2>Bienvenue sur Microguide</h2>
+        <p>Utilisez les liens ci-dessous pour naviguer dans votre infectiologue de poche.</p>
+        <ul>
+          <li><a href="antibiotiques.html">Antibiotiques</a></li>
+          <li><a href="bacteries.html">Bactéries</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <footer>
+        <div></div>
+      </footer>
+    </main>
+  </div>
+  <script src="search.js"></script>
+</body>
+</html>
+
